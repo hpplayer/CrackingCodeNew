@@ -5,7 +5,7 @@ public class p_3_4 {
 	static Stack<Integer> A = new Stack<Integer>();
 	static Stack<Integer> B = new Stack<Integer>();
 	static Stack<Integer> C = new Stack<Integer>();
-	static int n = 5;//number of disks
+	static int n = 10;//number of disks
 	
 	public static void main(String[] args) {
 		// Set up code.
@@ -16,11 +16,22 @@ public class p_3_4 {
 		}
 		
 		// Copy and paste output into a .XML file and open it with internet explorer.
-		for(int i = 0; i < C.size(); i++){
+		int size = C.size();
+		for(int i = 0; i < size; i++){
 			System.out.println("C contains: " + C.pop());
 		}
-		for(int i = 0; i < A.size(); i++){
+		//System.out.println(A.size());
+		/*
+		System.out.println("A contains: " + A.pop());
+		System.out.println("A contains: " + A.pop());
+		System.out.println("A contains: " + A.pop());
+		System.out.println("A contains: " + A.pop());
+		System.out.println("A contains: " + A.pop());
+		*/
+		int size2 = A.size();
+		for(int i = 0; i < size2; i++){
 			System.out.println("A contains: " + A.pop());
+			//System.out.println(i);
 		}
 		for (int i = n - 1; i >= 0; i--) {
 			A.push(i);
@@ -28,11 +39,12 @@ public class p_3_4 {
 		
 		new p_3_4().MoveAmongRods(n, C, A, B);
 		System.out.println("after running codes");
-		
-		for(int i = 0; i < C.size(); i++){
+		int size3 = C.size();
+		for(int i = 0; i < size3; i++){
 			System.out.println("C contains: " + C.pop());
 		}
-		for(int i = 0; i < A.size(); i++){
+		int size4 = A.size();
+		for(int i = 0; i < size4; i++){
 			System.out.println("A contains: " + A.pop());
 		}
 	}
