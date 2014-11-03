@@ -40,9 +40,11 @@ public class LinkedListNode {
 	
 	public LinkedListNode clone() {
 		LinkedListNode next2 = null;
+		/*
 		if (next != null) {
 			next2 = next.clone();
 		}
+		*/
 		LinkedListNode head2 = new LinkedListNode(data, next2, null);
 		return head2;
 	}
