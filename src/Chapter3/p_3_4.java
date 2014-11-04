@@ -17,6 +17,9 @@ public class p_3_4 {
 		
 		// Copy and paste output into a .XML file and open it with internet explorer.
 		int size = C.size();
+		if(C.isEmpty()){
+			System.out.println("C does not contain any element");
+		}
 		for(int i = 0; i < size; i++){
 			System.out.println("C contains: " + C.pop());
 		}
@@ -44,6 +47,9 @@ public class p_3_4 {
 			System.out.println("C contains: " + C.pop());
 		}
 		int size4 = A.size();
+		if(A.isEmpty()){
+			System.out.println("A does not contain any element");
+		}
 		for(int i = 0; i < size4; i++){
 			System.out.println("A contains: " + A.pop());
 		}
