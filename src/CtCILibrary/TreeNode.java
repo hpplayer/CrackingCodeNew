@@ -8,8 +8,7 @@ public class TreeNode {
 	public TreeNode left;    
 	public TreeNode right; 
 	public TreeNode parent;
-	private int size = 0;
-
+	private int size = 0;//tell if the node has 0, 1 or 2 leaves
 	public TreeNode(int d) {
 		data = d;
 		size = 1;

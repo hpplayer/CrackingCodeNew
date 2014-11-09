@@ -1,18 +1,22 @@
 package Chapter3;
 
 public class Animal {
-	private static String Name;
-	private static int ID;
-	public static String getName() {
+	/*Remember static is class variable that shared by all instances of the same class
+	 * so dont make ID and Name static or the results will be same as the last settings
+	 * 
+	 */
+	private String Name;
+	private  int ID;
+	public  String getName() {
 		return Name;
 	}
-	public static void setName(String name) {
+	public void setName(String name) {
 		Name = name;
 	}
-	public static int getID() {
+	public int getID() {
 		return ID;
 	}
-	public static void setID(int iD) {
+	public  void setID(int iD) {
 		ID = iD;
 	}
 	

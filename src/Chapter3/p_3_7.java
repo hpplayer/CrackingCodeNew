@@ -5,8 +5,9 @@ import java.util.Queue;
 
 import javax.management.Query;
 /*FIFO
- * 
- * 
+ * LinkedList can use either poll() or removeFirst() to dequeue
+ * LinkedList can use addLast to enqueue
+ * LinkedList can use either peek() or getFirst() to peek the head node
  */
 public class p_3_7 {
 	LinkedList<Dog> dogq = new LinkedList<Dog>();
@@ -18,7 +19,6 @@ public class p_3_7 {
 		p_3_7 animals = new p_3_7();
 		Cat a = new Cat();
 		a.setName("Callie");
-		
 		Cat b = new Cat();
 		b.setName("Kiki");
 		
@@ -65,7 +65,7 @@ public class p_3_7 {
 	}
 	
 	public void enqueue(Animal a){
-		Animal.setID(id);
+		a.setID(id);
 		id++;
 		if( a instanceof Cat){
 			catq.addLast((Cat)a);
@@ -113,21 +113,21 @@ public class p_3_7 {
 	
 	
 	public Cat deququeCat(){
-		//return catq.removeFirst();
-		return catq.poll();
+		return catq.removeFirst();
+		//return catq.poll();
 	}
 	public Dog deququeDog(){
-		//return dogq.removeFirst();
-		return dogq.poll();
+		return dogq.removeFirst();
+		//return dogq.poll();
 	}
 	public Cat Catpeek(){
-		//return catq.getFirst();
-		return catq.peek();
+		return catq.getFirst();
+		//return catq.peek();
 	}
 	
 	public Dog Dogpeek(){
-		//return dogq.getFirst();
-		return dogq.peek();
+		return dogq.getFirst();
+		//return dogq.peek();
 	}
 	
 	
