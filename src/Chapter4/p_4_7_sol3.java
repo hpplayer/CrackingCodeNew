@@ -11,7 +11,7 @@ public class p_4_7_sol3 {
 	public static void main(String[] args) {
 		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		TreeNode root = TreeNode.createMinimalBST(array);
-		TreeNode n3 = root.find(4);
+		TreeNode n3 = root.find(7);
 		//System.out.println(n3.data);
 		TreeNode n7 = root.find(10);
 	//	System.out.println(n7.data);

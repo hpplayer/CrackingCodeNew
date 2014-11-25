@@ -121,7 +121,5 @@ public static TreeNode search(TreeNode root, int sum, ArrayList<Integer> ary){//
   public static void print(ArrayList<Integer> ary){
 	  System.out.println(ary.toString());
   }
-	
-
-	
 }
+
