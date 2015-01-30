@@ -29,10 +29,10 @@ public class OnlineSystem {
 		return ISBNlookup.get(name);
 	}
 	public Book searchbook(User user, BookType bookType, int ISBN){
-		if(types.get(bookType) == null){
+		if(!types.containsKey(bookType)){
 			return null;
 		}else{
-			if(types.get(bookType).get(ISBN) == null){
+			if(!types.get(bookType).containsKey(ISBN)){
 				return null;
 			}else{
 				Book temp = (Book) types.get(bookType).get(ISBN);
