@@ -29,7 +29,7 @@ public class p_9_4 {
 		for(int k = x; k > 0; k >>=1){ // k = k >> 1
 
 			if((k & 1) == 1){ //if the last bit is 1, then true
-				System.out.println(set.get(index));
+				//System.out.println(set.get(index));
 				subset.add(set.get(index));
 			}
 			index++;
@@ -39,9 +39,9 @@ public class p_9_4 {
 	
 	public static ArrayList<ArrayList<Integer>> getSubsets2(ArrayList<Integer> set){
 		allsubsets = new ArrayList<ArrayList<Integer>>();
-		int max = 1 <<set.size(); //compute 2^n
+		int max = 1 <<set.size(); //compute 2^n, transfer set.size() to binary string
 		for(int k = 0; k < max; k++){
-
+			System.out.println(k);
 			ArrayList<Integer> subset = convertIntToSet(k, set);
 			allsubsets.add(subset);
 		}
