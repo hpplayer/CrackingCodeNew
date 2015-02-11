@@ -13,12 +13,12 @@ public class p_9_5_sol2 {
 			return perm;
 		}
 		
-		char first = str.charAt(0);
+		char first = str.charAt(0);//the one that we will insert around
 		String remainder = str.substring(1);
-		ArrayList<String> words = getPerms(remainder);
+		ArrayList<String> words = getPerms(remainder); //each iteration, the words in the words get one char longer
 		for(String word: words){
 			for(int j = 0; j <= word.length(); j++){
-				String s = insertCharAt(word, first, j);
+				String s = insertCharAt(word, first, j);//s has the exactly same chars as the input
 				perm.add(s);
 			}
 		}
