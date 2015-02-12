@@ -49,7 +49,7 @@ public class p_9_7 {
 
 	public static void test(Color[][] screen, int x, int y, Color ncolor) {
 		//if (screen[x][y] == ncolor) return false;
-		test(screen, y, x, screen[y][x], ncolor);
+		test(screen, x, y, screen[y][x], ncolor);
 	}
 	public static int randomInt(int n) {
 		return (int) (Math.random() * n);
