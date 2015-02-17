@@ -31,7 +31,7 @@ public class p_9_6_sol2 {
 	}
 	
 	public static void main(String[] args){
-		ArrayList<String> list = generateParens(3);
+		ArrayList<String> list = generateParens(4);
 		for(String s: list){
 			System.out.println(s);
 		}
