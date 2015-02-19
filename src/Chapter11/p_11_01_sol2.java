@@ -7,7 +7,7 @@ public class p_11_01_sol2 {
 		int indexMerged = lastB + lastA - 1; /* Index of last location of merged array */
 		int indexA = lastA - 1; /* Index of last element in array b */
 		int indexB = lastB - 1; /* Index of last element in array a */
-	
+		//System.out.println(indexMerged);
 		/* Merge a and b, starting from the last element in each */
 		while (indexB >= 0) {
 			if (indexA >= 0 && a[indexA] > b[indexB]) { /* end of a is bigger than end of b */
