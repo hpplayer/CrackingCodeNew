@@ -1,7 +1,6 @@
 package Chapter8_9;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Memory {
 	int size = 100;

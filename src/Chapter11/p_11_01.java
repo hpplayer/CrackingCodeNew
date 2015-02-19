@@ -41,7 +41,7 @@ public class p_11_01 {
 		//System.out.println(B[lastB] );
 		//System.out.println(A[lastA] );
 	//	System.out.println(lastB );
-			if (lastA < 0 || (lastB >= 0  &&B[lastB] > A[lastA])) {
+			if (lastA < 0 || (lastB >= 0  &&B[lastB] > A[lastA])) {//dont remember the case: lastA < 0, since we are sorting in reverse order, A[] maybe firstly used up
 				//if(A[lastA] == 1) System.out.println("lala");
 				A[index] = B[lastB];
 				index--;
