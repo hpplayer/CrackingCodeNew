@@ -6,7 +6,7 @@ public class p_11_06_sol3 {
 	//if we have not found the element, it must be in lower left or upper right
 	public static Coordinate partionAndSearch(int[][] matrix, Coordinate origin, Coordinate dest, Coordinate pivot, int x){
 		Coordinate lowerLeftOrigin = new Coordinate(pivot.row, origin.column);//top left in this part
-		Coordinate lowerLeftDest = new Coordinate(dest.row, origin.column-1);//bot right in this part
+		Coordinate lowerLeftDest = new Coordinate(dest.row, pivot.column-1);//bot right in this part
 		Coordinate upperRightOrigin = new Coordinate(origin.row, pivot.column);//top left in this part
 		Coordinate upperRightDesti = new Coordinate(pivot.row -1, dest.column);//bot right in this part
 	
@@ -42,12 +42,13 @@ public class p_11_06_sol3 {
 				end.row = p.row -1;
 				end.column = p.column -1;
 			}
-			System.out.println("p: " + matrix[p.row][p.column]);
-			System.out.println("start: " + matrix[start.row][start.column]);
-			System.out.println("end: " + matrix[end.row][end.column]);
+	
 			System.out.println();
 		}
-		System.out.println("i break out");
+		//System.out.println("i break out");
+		//System.out.println("p: " + matrix[p.row][p.column]);
+		//System.out.println("start: " + matrix[start.row][start.column]);
+		//System.out.println("end: " + matrix[end.row][end.column]);
 		//System.out.println(matrix[start.row][start.column]);
 		//input original origin and original dest, but start is changed in the binary search, w
 		return partionAndSearch(matrix, origin, dest, start, x);//start is the first element in diagonal that larger than x
