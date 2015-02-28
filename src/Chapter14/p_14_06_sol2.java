@@ -3,7 +3,7 @@ package Chapter14;
 public class p_14_06_sol2 {
 	public static void main(String[] args) {
 		int size = 10;
-		CircularArray2<String> array = new CircularArray2<String>(size);
+		CircularArray3<String> array = new CircularArray3<String>(size);
 		for (int i = 0; i < size; i++) {
 			array.set(i, String.valueOf(i));
 		}
